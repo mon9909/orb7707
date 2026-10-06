@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>عون للاستشارة والاستثمار | Aoun Consultation & Investment</title>
+    <!-- ربط خطوط Google لإعطاء مظهر عصري فاخر يناسب اللغتين -->
+    <link rel="preconnect" href="https://googleapis.com">
+    <link rel="preconnect" href="https://gstatic.com" crossorigin>
+    <link href="https://googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;500;600;700&family=Tajawal:wght@300;400;500;700;900&display=swap" rel="stylesheet">
+    <!-- مكتبة المخططات البيانية التفاعلية والناعمة Chart.js -->
+    <script src="https://jsdelivr.net"></script>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <!-- زر تبديل اللغة تفاعلي مودرن دائري -->
+    <button class="lang-switch" onclick="toggleLanguage()">
+        <span class="ar-text">English</span>
+        <span class="en-text">العربية</span>
+    </button>
+
+    <!-- الهيدر والشعار -->
+    <header>
+        <div class="logo">عون<span>.</span></div>
+    </header>
+
+    <!-- الواجهة الرئيسية الحديثة المدمجة بخلفية مباني كافد الشفافة -->
+    <section class="hero">
+        <div class="hero-content">
+            <h1 class="ar-text">عون للاستشارة والاستثمار<br><span>نحو استثمار آمن ومدروس.</span></h1>
+            <h1 class="en-text">Aoun Consultation & Investment<br><span>Navigating Risks, Securing Growth.</span></h1>
+            
+            <p class="ar-text">يقود خبراؤنا استثماراتكم في الأسواق المعقبل بقلب الرياض من خلال تحليلات علمية دقيقة وإدارة متكاملة للمخاطر، لنحول التحديات إلى فرص نمو مستدامة.</p>
+            <p class="en-text">Our experts guide your investments through complex markets in the heart of Riyadh using precise analytics and integrated risk management, turning financial uncertainties into sustainable growth opportunities.</p>
+            
+            <a href="#contact" class="btn">
+                <span class="ar-text">احجز استشارتك الاستراتيجية</span>
+                <span class="en-text">Book Your Strategic Consultation</span>
+            </a>
+        </div>
+    </section>
+
+    <!-- أقسام عن الشركة متكاملة مع صورة معمارية حديثة لأبراج كافد بالرياض -->
+    <section class="about" id="about">
+        <div class="about-grid">
+            <div class="about-text">
+                <h2 class="section-title">
+                    <span class="ar-text">عن الشركة</span>
+                    <span class="en-text">About Us</span>
+                </h2>
+                <p class="ar-text">في عون للاستشارة والاستثمار، نؤمن بأن الاستثمار الناجح لا يعني تجنب المخاطر تماماً، بل فهمها بدقة وإدارتها بحكمة. نحن شركة استشارية متخصصة في تقديم الحلول الاستثمارية القائمة على البحوث الميدانية، والتقييم الصارم للمخاطر، وابتكار استراتيجيات التحوط والتجنب لحماية وتنمية أصول عملائنا.</p>
+                <p class="en-text">At Aoun for Consultation & Investment, we believe that successful investing is not about avoiding risks, but rather understanding them deeply and managing them wisely. We are an advisory firm specialized in delivering investment solutions built on rigorous research, comprehensive risk assessments, and tailored mitigation strategies to protect and grow our clients' assets.</p>
+            </div>
+            <!-- صورة معمارية لمركز كافد المالي بالرياض تعكس هوية الشركة الاستثمارية المحدثة -->
+            <img src="https://unsplash.com" alt="KAFD Riyadh Towers" class="kafd-showcase">
+        </div>
+    </section>
+
+    <!-- المخططات والرسومات البيانية التفاعلية -->
+    <section class="charts-section">
+        <h2 class="section-title" style="display: block; text-align: center;">
+            <span class="ar-text">منهجيتنا بالأرقام والتحليل</span>
+            <span class="en-text">Our Analytics & Methodology</span>
+        </h2>
+        <div class="charts-grid">
+            <div class="chart-container">
+                <h3 class="ar-text">مؤشر خفض المخاطر بعد تطبيق استراتيجيات عون</h3>
+                <h3 class="en-text">Risk Mitigation Trend Post-Implementation</h3>
+                <canvas id="riskLineChart"></canvas>
+            </div>
+            <div class="chart-container">
+                <h3 class="ar-text">الهيكل النموذجي لتوزيع الأصول وتجنب التركز</h3>
+                <h3 class="en-text">Model Asset Allocation & Risk Diversification</h3>
+                <canvas id="allocationPieChart"></canvas>
+            </div>
+        </div>
+    </section>
+
+    <!-- فريق العمل والخبرات والتخصصات المضافة للشركة -->
+    <section class="team">
+        <h2 class="section-title">
+            <span class="ar-text">فريق العمل والخبرات</span>
+            <span class="en-text">Our Team & Expertise</span>
+        </h2>
+        <p class="ar-text">يضم فريق العمل في عون نخبة من كفاءات التنسيق الاستثماري، ومحللي الأسواق، واختصاصيي إدارة المخاطر. يعمل مستشارونا بتكامل تام لربط الفرص الاستثمارية الواعدة بالأهداف المالية لعملائنا، مع التركيز الكامل على بناء محافِظ متوازنة وتطبيق أدق معايير الأمان المالية.</p>
+        <p class="en-text">The team at Aoun brings together elite investment coordinators, market analysts, and risk management specialists. Our professionals work in perfect synergy to align lucrative market opportunities with our clients' financial goals, focusing entirely on building balanced portfolios and enforcing strict capital protection standards.</p>
+    </section>
+
+    <!-- الخدمات الاستراتيجية ببطاقات تفاعلية ناعمة -->
+    <section class="services">
+        <h2 class="section-title" style="display: block; text-align: center;">
+            <span class="ar-text">خدماتنا الاستراتيجية</span>
+            <span class="en-text">Our Core Services</span>
+        </h2>
+        <div class="services-grid">
+            <div class="service-card">
+                <div class="service-icon">🔍</div>
+                <h3 class="ar-text">البحوث والتحليل الاستثماري</h3>
+                <h3 class="en-text">Investment Research & Analysis</h3>
+                <p class="ar-text">دراسة الأسواق، وتحليل البيانات المالية، وتقديم تقارير وبحوث متكاملة تدعم اتخاذ القرارات الاستثمارية الصحيحة.</p>
+                <p class="en-text">Conducting thorough market studies, analyzing financial data, and providing research reports to backup intelligent investment decisions.</p>
+            </div>
+            <div class="service-card">
+                <div class="service-icon">📊</div>
+                <h3 class="ar-text">تقييم المخاطر</h3>
+                <h3 class="en-text">Risk Assessment</h3>
+                <p class="ar-text">الفحص الاستباقي لكل فرصة استثمارية لتحديد مصادر الخطر المالي، التشغيلي، أو السوقي وتحديد حجم تأثيرها.</p>
+                <p class="en-text">Proactively auditing every financial opportunity to detect market, operational, or financial risks and measure their potential impact.</p>
+            </div>
+            <div class="service-card">
+                <div class="service-icon">🛡️</div>
+                <h3 class="ar-text">إدارة المخاطر وتجنبها</h3>
+                <h3 class="en-text">Risk Management & Mitigation</h3>
+                <p class="ar-text">صياغة استراتيجيات التحوط والتجنب، وتوزيع الأصول الذكي لتقليل احتمالية الخسائر وحماية رأس المال الأساسي.</p>
+                <p class="en-text">Designing hedging frameworks, risk-mitigation plans, and smart asset allocation to minimize losses and shield core capital.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- قسم تواصل معنا المودرن -->
+    <section class="contact" id="contact">
+        <div class="contact-card">
+            <h2 class="section-title">
+                <span class="ar-text">تواصل معنا</span>
+                <span class="en-text">Contact Us</span>
+            </h2>
+            <p class="ar-text">دعنا نكون عوناً لك في إدارة وتأمين خطواتك الاستثمارية القادمة.</p>
+            <p class="en-text">Let us be your trusted support (Aoun) in managing and securing your next investment moves.</p>
+            
+            <div class="contact-links">
+                <a href="mailto:info@aoun.com" class="contact-btn">Email</a>
+                <a href="https://wa.me" class="contact-btn">WhatsApp</a>
+                <a href="#" class="contact-btn">LinkedIn</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- تذييل الصفحة المرجعي الصغير جداً لـ PWC خافت اللون -->
+    <footer>
+        <p class="ar-text">&copy; 2026 عون للاستشارة والاستثمار. جميع الحقوق محفوظة.</p>
+        <p class="en-text">&copy; 2026 Aoun Consultation & Investment. All rights reserved.</p>
+        
+        <div class="pwc-disclaimer">
+            <span class="ar-text">بالتعاون مع PwC Middle East</span>
+            <span class="en-text">In association with PwC Middle East</span>
+        </div>
+    </footer>
+
+    <!-- تحليلات وتشغيل الرسوم البيانية التفاعلية الناعمة -->
+    <script>
+        const ctxLine = document.getElementById('riskLineChart').getContext('2d');
+        new Chart(ctxLine, {
+            type: 'line',
+            data: {
+                labels: ['M1', 'M2', 'M3', 'M4', 'M5', 'M6', 'M7', 'M8', 'M9', 'M10', 'M11', 'M12'],
+                datasets: [{
+                    label: 'Risk Index %',
+                    data:,
+                    borderColor: '#C5A880',
+                    backgroundColor: 'rgba(197, 168, 128, 0.04)',
+                    borderWidth: 3,
+                    fill: true,
+                    tension: 0.4 
+                }]
+            },
+            options: {
+                responsive: true,
+                plugins: { legend: { display: false } },
+                scales: { y: { min: 0, max: 100 } }
+            }
+        });
+
+        const ctxPie = document.getElementById('allocationPieChart').getContext('2d');
+        new Chart(ctxPie, {
+            type: 'pie',
+            data: {
